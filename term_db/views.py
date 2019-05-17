@@ -14,23 +14,7 @@ class TerminalViewSet(viewsets.ModelViewSet):
 
 
 class MeasuredDataViewSet(viewsets.ModelViewSet):
-    queryset = MeasuredData.objects.all()
+    queryset = MeasuredData.objects.order_by('pk')[:5]
     serializer_class = MeasuredDataSerializer
 
     permission_classes = (IsAuthenticated, )
-
-
-class IndexView(TemplateView):
-
-    template_name = "index.html"
-
-    def get_context_data(self, **kwargs):
-        pass
-
-
-class AboutView(TemplateView):
-
-    template_name = "about.html"
-
-    def get_context_data(self, **kwargs):
-        pass

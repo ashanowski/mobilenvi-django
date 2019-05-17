@@ -23,9 +23,7 @@ router.register('terminals', views.TerminalViewSet)
 router.register('data', views.MeasuredDataViewSet)
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='home'),
     path('api/', include(router.urls), name='api'),
-    path('about/', views.AboutView.as_view(), name='about'),
     path('api/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
 ]
