@@ -1,6 +1,16 @@
+$darkblue: rgba(36, 123, 160, 1);
+$lightblue: rgba(112, 193, 179, 1);
+$lightgreen: rgba(178, 219, 191, 1);
+$lightyellow: rgba(243, 255, 189, 1);
+$red: rgba(255, 22, 84, 1);
+
+
+
 body {
     width: 1000px;
     margin: auto;
+    background-color: $darkblue;
+
 
     header {
         #logo {
@@ -19,7 +29,7 @@ body {
         #nav {
 
             text-align: center;
-            background-color: #333;
+            background-color: $lightblue;
 
             ul {
                 list-style: none;
@@ -29,8 +39,6 @@ body {
 
                 li {
                     display: inline-block;
-                    // padding-right: 20px;                    
-                    // padding-left: 20px;
 
                     a {
                         display: block;
@@ -40,7 +48,7 @@ body {
                     }
 
                     a:hover {
-                        background-color: #111;
+                        background-color: $lightgreen;
                     }
 
                 }
@@ -49,12 +57,20 @@ body {
 
     }
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    main {
+        background-color: $lightyellow;
+        margin: 0;
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
     }
+
 
 
 
@@ -62,7 +78,10 @@ body {
         text-align: center;
         color: white;
         background-color: #333;
-        height: 35px;
+        position: relative;
+        height: 25px;
         font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 }

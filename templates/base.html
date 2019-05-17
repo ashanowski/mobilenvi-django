@@ -17,33 +17,26 @@
 
 
 <body>
-
     <header>
-    {% block header %}
     <div id="logo">
         <h1>Mobilenvi</h1>
         <h2>Creative solutions</h2>
     </div>
     <div id="nav">
         <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="#">API</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
         </ul>
     </div>
-    {% endblock header %}
     </header>
 
-    {% block body %}
-    {% endblock body %}
+    <main>
+        {% block main %}
+        {% endblock main %}
+    </main>
 
     <footer>
-        {% block footer %}
-        <p>All rights reserved &copy; 2019</p>
-        {% endblock footer %}
+        All rights reserved &copy; 2019
     </footer>
 
 </body>
-
 
 </html>
