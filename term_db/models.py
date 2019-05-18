@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 class Terminal(models.Model):
@@ -23,6 +24,8 @@ class MeasuredData(models.Model):
     terminal = models.ForeignKey(Terminal, on_delete=models.CASCADE)
     temperature = models.FloatField()
     pressure = models.FloatField()
+    humidity = models.FloatField()
+    added_at = models.DateTimeField(default=timezone.now)
 
     class Meta:
         verbose_name = "Measured Data"

@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/emilia/.local/share/virtualenvs/mobilenvi-django-4NFO1zl0/bin/python",
+    "python.pythonPath": "/home/gonz/src/virtual_envs_python/mobilenvi_django-bDy0ejph/bin/python",
     "python.linting.pylintEnabled": false,
     "python.linting.pep8Enabled": true,
     "python.linting.enabled": true

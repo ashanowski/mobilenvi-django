@@ -14,7 +14,7 @@ class TerminalViewSet(viewsets.ModelViewSet):
 
 
 class MeasuredDataViewSet(viewsets.ModelViewSet):
-    queryset = MeasuredData.objects.order_by('pk')[:5]
+    queryset = MeasuredData.objects.order_by('pk').reverse()[:5]
     serializer_class = MeasuredDataSerializer
 
     permission_classes = (IsAuthenticated, )

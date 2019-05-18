@@ -13,4 +13,4 @@ class MeasuredDataSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         model = MeasuredData
-        fields = ('temperature', 'pressure', 'terminal')
+        fields = ('temperature', 'pressure', 'humidity', 'added_at', 'terminal')
